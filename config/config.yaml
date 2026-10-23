@@ -1,0 +1,25 @@
+model:
+  path: artifacts/disease_model.pkl
+  label_encoder: artifacts/label_encoder.pkl
+  symptom_columns: artifacts/symptom_columns.pkl
+
+data:
+  symptoms: data/Diseases_and_Symptoms_dataset.csv
+  descriptions: data/description.csv
+  medications: data/medications.csv
+  precautions: data/precautions.csv
+  workouts: data/workout.csv
+  diets: data/diets.csv
+
+training:
+  test_size: 0.2
+  random_state: 42
+
+maps:
+  nominatim_url: https://nominatim.openstreetmap.org/search
+  overpass_url: "https://maps.mail.ru/osm/tools/overpass/api/interpreter"
+  user_agent: HealthAssistAI/1.0
+  default_radius: 5000
+  geocode_timeout: 10
+  overpass_timeout: 30
+  max_results: 5
