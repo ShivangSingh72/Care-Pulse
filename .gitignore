@@ -1,0 +1,61 @@
+# ==========================================
+# CarePulse - Git Ignore
+# ==========================================
+
+
+# Dataset / Images
+/data/
+/Chest Cancer/
+/Kidney Cancer/
+
+
+# Dataset file lists / metadata
+carepulse_files.txt
+carepulse_selected_40000.txt
+carepulse_failed_downloads.txt
+kaggle_files.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML generated files
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.keras
+*.pth
+*.pt
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# React frontend
+carepulse-frontend/node_modules/
+carepulse-frontend/dist/zip/
