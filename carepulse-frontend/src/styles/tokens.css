@@ -1,0 +1,70 @@
+:root {
+  /* ---- Color (from DESIGN.md) ---- */
+  --surface: #f8f9ff;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #eff4ff;
+  --surface-container: #e5eeff;
+  --surface-container-high: #dce9ff;
+  --on-surface: #0b1c30;
+  --on-surface-variant: #3d4a42;
+  --outline: #6d7a72;
+  --outline-variant: #bccac0;
+
+  --primary: #059669;
+  --primary-deep: #064e3b;
+  --primary-hover: #047857;
+  --primary-container: #ecfdf5;
+  --on-primary-container: #065f46;
+  --primary-container-border: #a7f3d0;
+
+  --secondary: #0f766e;
+
+  --tertiary: #10b981;
+  --tertiary-wash: #ecfdf5;
+
+  --neutral: #64748b;
+  --neutral-bg: #f8fafc;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  --success-bg: #ecfdf5;
+  --success-text: #065f46;
+  --success-dot: #10b981;
+
+  --attention-bg: #fef3c7;
+  --attention-text: #92400e;
+  --attention-dot: #f59e0b;
+
+  --critical-bg: #fef2f2;
+  --critical-text: #991b1b;
+  --critical-dot: #ef4444;
+
+  /* ---- Type ---- */
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* ---- Radius (Rounded Level 2) ---- */
+  --radius-sm: 0.25rem;
+  --radius: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ---- Spacing (8pt grid) ---- */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --gutter: 1.5rem;
+  --margin: 2rem;
+
+  /* ---- Elevation ---- */
+  --shadow-resting: 0 1px 3px rgba(15, 23, 42, 0.04), 0 4px 12px rgba(15, 23, 42, 0.02);
+  --shadow-hover: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 10px 24px -3px rgba(5, 150, 105, 0.06);
+  --shadow-floating: 0 12px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 8px -2px rgba(15, 23, 42, 0.03);
+
+  --content-max: 760px;
+  --bottom-nav-height: 68px;
+}

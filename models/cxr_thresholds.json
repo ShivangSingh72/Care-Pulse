@@ -1,0 +1,7 @@
+{
+    "pneumonia": 0.3647,
+    "pleural_effusion": 0.4389,
+    "pneumothorax": 0.6961,
+    "consolidation": 0.4255,
+    "pulmonary_edema": 0.5404
+}

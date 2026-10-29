@@ -9,18 +9,16 @@
 /Kidney Cancer/
 
 
-# Dataset file lists / metadata
-carepulse_files.txt
-carepulse_selected_40000.txt
-carepulse_failed_downloads.txt
-kaggle_files.csv
-
 # Python cache
 __pycache__/
 *.py[cod]
 .pytest_cache/
 
+# Temporary VS Code / Code Runner
+tempCodeRunnerFile.py
+
 # Virtual environments
+.venv/
 venv/
 env/
 
@@ -37,7 +35,6 @@ env/
 *.pickle
 *.joblib
 *.h5
-*.keras
 *.pth
 *.pt
 
@@ -47,12 +44,11 @@ logs/
 
 # IDE
 .vscode/
+.idea/
 
 # OS
 .DS_Store
 Thumbs.db
-
-/tests
 
 # Temporary files
 *.tmp

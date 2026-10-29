@@ -1,0 +1,222 @@
+/* =========================================================
+   CAREPULSE — ACCOUNT / PROFILE
+   ========================================================= */
+
+/* ---------- Account button ---------- */
+
+.avatar-btn.profile-avatar-filled {
+  background: var(--primary-deep);
+}
+
+.profile-avatar-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+/* ---------- Popover ---------- */
+
+.profile-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 40;
+  width: 360px;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  padding: 18px;
+  background: var(--surface-container-lowest);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-floating);
+}
+
+.profile-popover-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-popover-header strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--on-surface);
+  word-break: break-word;
+}
+
+.profile-popover-header span {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.78rem;
+  color: var(--on-surface-variant);
+}
+
+.profile-large-avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--primary-container);
+  color: var(--primary-deep);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.profile-divider {
+  height: 1px;
+  margin: 16px 0;
+  background: var(--border);
+}
+
+/* ---------- Form ---------- */
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.profile-field label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: var(--on-surface-variant);
+}
+
+.profile-field input,
+.profile-field select {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: var(--surface-container-lowest);
+  color: var(--on-surface);
+  font: 0.9rem var(--font-body);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.profile-field input::placeholder {
+  color: var(--neutral);
+}
+
+.profile-field input:focus,
+.profile-field select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+.profile-field small {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--neutral);
+}
+
+.profile-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.profile-section-label {
+  margin-top: 2px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+
+.profile-vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* ---------- Actions ---------- */
+
+.profile-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.profile-save-button {
+  flex: 1;
+  min-height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.profile-save-button:hover {
+  background: var(--primary-hover);
+}
+
+.profile-save-button:active {
+  transform: scale(0.99);
+}
+
+.profile-clear-button {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--on-surface-variant);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-clear-button:hover {
+  background: var(--surface-container-low);
+}
+
+/* ---------- Read-only vitals on the Symptoms page ---------- */
+
+.vital-status.neutral {
+  background: var(--primary);
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 640px) {
+  .profile-popover {
+    position: fixed;
+    top: 68px;
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-height: calc(100vh - 150px);
+    padding: 16px;
+  }
+
+  /* 16px prevents iOS zoom on focus */
+  .profile-field input,
+  .profile-field select {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .profile-vitals-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
